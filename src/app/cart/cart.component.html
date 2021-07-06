@@ -1,0 +1,4 @@
+<h3>Carrito</h3>
+<app-item *ngFor="let produc of shopList" [productToShow]="produc" (removeToCart)="removeOnCart($event)"></app-item>
+<p>El precio total es: {{totalPrice}}</p>
+<button>Pagar</button>

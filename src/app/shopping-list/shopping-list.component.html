@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Lista de frutas:</h2>
+   <div class="sub-container">
+    <div>
+        <label>Producto:</label><input type="text" [(ngModel)]="actualProduct">
+    </div>
+    <div>
+        <label>Cantidad:</label><input type="number" [(ngModel)]="actualAmount">
+    </div>
+    <div>
+        <label>Precio:</label><input type="number" [(ngModel)]="actualPrice">
+    </div>
+   </div>
+    <button (click)="add()">Add cart</button>
+
+    <app-cart [shopList]="shopList" (removetoShopList)="deleteProduct($event)" [totalPrice]="totalPrice"></app-cart>
+</div>

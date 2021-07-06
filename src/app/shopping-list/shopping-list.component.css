@@ -1,0 +1,17 @@
+.container {
+    margin: 10px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    margin: 20px 0;
+}
+
+label {
+    padding-right: 10px;
+}
